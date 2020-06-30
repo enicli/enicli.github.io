@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- <button id="btn">click me</button> -->
+  <a class="btn" href="https://www.qq.com">click me</a>
+  <button class="btn">click me</button>
+  <script>
+    let btns = [...document.querySelectorAll('.btn')];
+      btns.map(btn => {
+        btn.addEventListener('click', (e) => {
+        alert('1111');
+      });
+      btn.addEventListener('click', (e) => {
+        alert('2222');
+      });
+      btn.addEventListener('click', (e) => {
+        alert('3333');
+      });
+      btn.onclick = function() {
+        alert('onclick');
+      }
+    })
+    
+  </script>
+  <script src="https://dev.visualwebsiteoptimizer.com/lib/507965.js"></script>
+  <script src="https://www.googleoptimize.com/optimize.js?id=GTM-N686KQC"></script>
+</body>
+</html>
