@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="68px" height="69px" viewBox="0 0 68 69" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>产品优势/icon-2</title>
+    <defs>
+        <linearGradient x1="0%" y1="87.6900427%" x2="75.8196471%" y2="33.8409677%" id="linearGradient-1">
+            <stop stop-color="#255FE7" stop-opacity="0.501775568" offset="0%"></stop>
+            <stop stop-color="#255FE7" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-3.55271368e-13%" y1="45.017603%" x2="93.487086%" y2="61.947933%" id="linearGradient-2">
+            <stop stop-color="#255FE7" stop-opacity="0.7" offset="0%"></stop>
+            <stop stop-color="#255FE7" stop-opacity="0.95" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-3.55271368e-13%" y1="41.5020281%" x2="93.487086%" y2="70.378384%" id="linearGradient-3">
+            <stop stop-color="#255FE7" stop-opacity="0.5" offset="0%"></stop>
+            <stop stop-color="#255FE7" stop-opacity="0.8" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-3.55271368e-13%" y1="33.4655554%" x2="93.487086%" y2="89.6500797%" id="linearGradient-4">
+            <stop stop-color="#255FE7" stop-opacity="0.8" offset="0%"></stop>
+            <stop stop-color="#255FE7" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="控件" transform="translate(-235.000000, -451.000000)">
+            <g id="编组" transform="translate(235.000000, 451.500000)">
+                <g id="可视化编辑实验页面" transform="translate(9.000000, 12.000000)">
+                    <path d="M7.42123808,0 L48.627497,0 C49.1797818,-2.12475365e-16 49.627497,0.44771525 49.627497,1 C49.627497,1.05023572 49.6237116,1.10040003 49.6161729,1.15006687 L43.3581744,42.3792335 C43.2839912,42.86797 42.8638329,43.2291667 42.3694985,43.2291667 L1.16323957,43.2291667 C0.610954821,43.2291667 0.16323957,42.7814514 0.16323957,42.2291667 C0.16323957,42.1789309 0.167025004,42.1287666 0.174563721,42.0790998 L6.43256223,0.84993313 C6.50674544,0.361196715 6.92690375,-7.92338551e-16 7.42123808,0 Z" id="矩形" stroke="url(#linearGradient-1)" stroke-width="4"></path>
+                    <polygon id="矩形" fill="url(#linearGradient-2)" transform="translate(25.422689, 21.614583) rotate(-90.000000) translate(-25.422689, -21.614583) " points="12.6700852 17.5889609 38.1752936 21.4360506 38.1752936 25.6402058 12.6700852 21.7931161"></polygon>
+                    <polygon id="矩形" fill="url(#linearGradient-3)" transform="translate(14.500707, 26.153646) rotate(-90.000000) translate(-14.500707, -26.153646) " points="6.28716533 22.7675199 22.7142487 25.3356166 22.7142487 29.5397718 6.28716533 26.9716751"></polygon>
+                    <polygon id="矩形" fill="url(#linearGradient-4)" transform="translate(35.817351, 29.395833) rotate(-90.000000) translate(-35.817351, -29.395833) " points="30.8459966 26.5370285 40.7887049 28.0504829 40.7887049 32.2546382 30.8459966 30.7411837"></polygon>
+                </g>
+            </g>
+            <g id="产品优势/icon-2" transform="translate(235.000000, 451.500000)">
+                <g id="可视化编辑实验页面" transform="translate(9.000000, 12.000000)">
+                    <path d="M7.42123808,0 L48.627497,0 C49.1797818,-2.12475365e-16 49.627497,0.44771525 49.627497,1 C49.627497,1.05023572 49.6237116,1.10040003 49.6161729,1.15006687 L43.3581744,42.3792335 C43.2839912,42.86797 42.8638329,43.2291667 42.3694985,43.2291667 L1.16323957,43.2291667 C0.610954821,43.2291667 0.16323957,42.7814514 0.16323957,42.2291667 C0.16323957,42.1789309 0.167025004,42.1287666 0.174563721,42.0790998 L6.43256223,0.84993313 C6.50674544,0.361196715 6.92690375,-7.92338551e-16 7.42123808,0 Z" id="矩形" stroke="url(#linearGradient-1)" stroke-width="4"></path>
+                    <polygon id="矩形" fill="url(#linearGradient-2)" transform="translate(25.422689, 21.614583) rotate(-90.000000) translate(-25.422689, -21.614583) " points="12.6700852 17.5889609 38.1752936 21.4360506 38.1752936 25.6402058 12.6700852 21.7931161"></polygon>
+                    <polygon id="矩形" fill="url(#linearGradient-3)" transform="translate(14.500707, 26.153646) rotate(-90.000000) translate(-14.500707, -26.153646) " points="6.28716533 22.7675199 22.7142487 25.3356166 22.7142487 29.5397718 6.28716533 26.9716751"></polygon>
+                    <polygon id="矩形" fill="url(#linearGradient-4)" transform="translate(35.817351, 29.395833) rotate(-90.000000) translate(-35.817351, -29.395833) " points="30.8459966 26.5370285 40.7887049 28.0504829 40.7887049 32.2546382 30.8459966 30.7411837"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
