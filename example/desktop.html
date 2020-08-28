@@ -364,8 +364,11 @@
     }
   </style>
   <!-- tabc ab实验sdk -->
+  <!-- 可选，实验数据上报需要依赖灯塔sdk，如果您的业务已经接入有多通道能力的灯塔sdk，可以不添加这一行 -->
+  <script src="https://beaconcdn.qq.com/sdk/3.1.42/beacon_web.min.js" charset="utf-8"></script>
+  <!-- tabc ab实验sdk -->
   <script src="https://res.abtest.qq.com/tabc_saas/tabc_sdk.min.js" charset="utf-8"> </script>
-  <!-- <script type="text/javascript">
+  <script type="text/javascript">
       tabc.init({
         appkey: "022033ba88269ce8aa3e22bf7e932b51",
         // guid: "xxxxxxxx",//可选，业务方的用户id，如果不传入则使用自动生成的用户身份并存入localstorage
@@ -377,7 +380,7 @@
           //网络策略加载回调，拿到最新的实验策略。网络可能会有延迟或者失败，为了防止阻塞页面逻辑和显示，可以设置一个超时timeout. 超时后会立即用缓存数据回调
         },
       });
-  </script> -->
+  </script>
 </head>
 
 <body>
