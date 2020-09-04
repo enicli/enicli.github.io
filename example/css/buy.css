@@ -1,0 +1,336 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: 'Helvetica Neue', Helvetica, 'Microsoft Yahei', STHeiTi, Arial, sans-serif;
+  line-height: 1.5;
+  color: #333;
+  background: #efefef;
+  min-height: 100%;
+}
+
+*,
+*::after,
+*::before {
+  pointer-events: auto !important;
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+}
+
+.content {
+  height: auto;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.group-banner {
+  box-sizing: border-box;
+  height: 70px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  background: #fe7c16
+    url(https://qzonestyle.gtimg.cn/qzone/abcmouse/camp/e-commerce/img/bg_price.png) no-repeat 0 0;
+  background-size: 100% 100%;
+}
+
+.group-banner .banner-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+  height: inherit;
+}
+
+.group-banner .limit-sale {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: inherit;
+  width: 140px;
+}
+
+.group-banner .banner-left .price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+}
+
+.group-banner .banner-left .price .price-unit {
+  font-size: 21.6px;
+  color: #fff;
+  letter-spacing: 0;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+  height: 36px;
+  line-height: 16px;
+}
+
+.group-banner .banner-left .price .price-num {
+  font-size: 40.8px;
+  color: #fff;
+  letter-spacing: -3.6px;
+  font-weight: 700;
+  font-family: din;
+  height: 36px;
+  line-height: 36px;
+}
+
+.group-banner .banner-left .sale-point {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-left: 10px;
+  height: inherit;
+  height: 32px;
+}
+
+.group-banner .banner-left .sale-point .group-info {
+  width: 72px;
+  height: 17px;
+  background: #fff;
+  border-radius: 2px;
+  display: block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  color: #ff5a31;
+}
+
+.group-banner .banner-left .sale-point .group-info:before {
+  background: url(https://qzonestyle.gtimg.cn/qzone/abcmouse/camp/group/e-commerce/img/icon_people.png)
+    no-repeat 0 0;
+  background-size: 17px 17px;
+  display: block;
+  content: '';
+  border-right: 1px solid #ff5a31;
+  margin-right: 2px;
+  width: 17px;
+  height: 17px;
+}
+
+.group-banner .banner-left .sale-point .origin-price {
+  font-size: 10px;
+  color: #fff;
+  line-height: 1;
+}
+
+.group-banner .limit-sale .title {
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: 1;
+}
+
+.inner-purchased-list {
+  padding-bottom: 10px;
+  height: 50px;
+  background: #efefef;
+}
+
+.inner-purchased-list .slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+}
+
+.inner-purchased-list .carousel {
+  width: inherit;
+  height: inherit;
+  z-index: 300;
+  height: 40px;
+  background: #fff;
+}
+
+.carousel-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  height: 40px;
+  padding-left: 18px;
+  font-size: 14px;
+  overflow: hidden;
+}
+
+.carousel-item .avatar {
+  width: 20px;
+  height: 20px;
+  border: 0;
+  margin-right: 4px;
+}
+
+.fudao_group_buy_info {
+  padding: 16px 20px 20px;
+  background-color: #fff;
+  width: 100vw;
+}
+
+.group-buy-title {
+  font-size: 14px;
+  color: #000;
+  letter-spacing: 0;
+  line-height: 20px;
+  font-weight: 700;
+  margin: 0 0 16px;
+}
+
+.fudao_group_buy_info .right.button,
+.fudao_group_buy_info_portal .right.button {
+  background: #ff5319;
+  border-radius: 18px;
+  height: 36px;
+  line-height: 36px;
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 0;
+  padding: 0 20px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.fixed-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fudao_group_buy_info .left .avatars,
+.fudao_group_buy_info_portal .left .avatars {
+  position: relative;
+  height: 36px;
+  width: 92px;
+}
+
+.fudao_group_buy_info .left .avatars,
+.fudao_group_buy_info_portal .left .avatars {
+  position: relative;
+  height: 36px;
+  width: 92px;
+}
+
+.fudao_group_buy_info .left > div,
+.fudao_group_buy_info_portal .left > div {
+  display: inline-block;
+}
+
+.fudao_group_buy_info .left .avatars .avatar,
+.fudao_group_buy_info_portal .left .avatars .avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+  position: absolute;
+  background-color: #efefef;
+}
+
+.fudao_group_buy_info .left .avatars > .avatar:first-child,
+.fudao_group_buy_info_portal .left .avatars > .avatar:first-child {
+  left: -2px;
+}
+
+.fudao_group_buy_info .left .avatars > .avatar:nth-child(2),
+.fudao_group_buy_info_portal .left .avatars > .avatar:nth-child(2) {
+  left: 26px;
+}
+
+.fudao_group_buy_info .left .avatars > .avatar:nth-child(3),
+.fudao_group_buy_info_portal .left .avatars > .avatar:nth-child(3) {
+  left: 54px;
+}
+
+.fudao_group_buy_info .left .avatars .avatar .avatar-inner,
+.fudao_group_buy_info_portal .left .avatars .avatar .avatar-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.avatars .avatar:first-child .avatar-inner {
+  background: url('//p.qpic.cn/qqconadmin/0/0ff8ace84510489c8f9264eefca80fe6/0');
+}
+
+.avatars .avatar:nth-child(2) .avatar-inner {
+  background: url('//p.qpic.cn/qqconadmin/0/9feb116286684f6aa9ad397774ac2206/0');
+}
+
+.avatars .avatar:nth-child(3) .avatar-inner {
+  background: url('//p.qpic.cn/qqconadmin/0/e6880b4dc9b14422a1702dc818117096/0');
+}
+
+.detail-picture {
+  margin-top: 10px;
+}
+
+.detail-picture .picture {
+  width: 100vw;
+  border: 0;
+  height: auto;
+}
+
+.footer {
+  margin-top: 10px;
+  height: 60px;
+  background: white;
+  display: flex;
+  align-items: center;
+}
+
+.footer input {
+  height: 40px;
+  margin-left: 10px;
+  padding: 0 10px;
+  border-radius: 4px;
+  border: 1px solid #dad0d0;
+  flex: 1;
+}
+
+.footer button {
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  line-height: 15px;
+  background-image: linear-gradient(180deg, #ff9811 3%, #f53);
+  box-shadow: 0 8px 16px 0 rgba(255, 85, 51, 0.3);
+  border-radius: 4px;
+  font-family: 500;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  margin: 0 15px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  border: unset;
+  padding: 0 15px;
+}

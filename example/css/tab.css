@@ -1,0 +1,420 @@
+/** 腾讯字体 **/
+@font-face {
+  font-family: 'TencentSans-W3';
+  src: local('TencentSans-W3'), url('fonts/TencentSans-W3.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TencentSans-W7';
+  src: local('TencentSans-W7'), url('fonts/TencentSans-W7.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.home {
+  position: relative;
+}
+
+.container {
+  width: 1126px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.light {
+  background: #fff;
+  color: #111116;
+}
+
+.dark {
+  background: #111116;
+  color: #fff;
+}
+
+.blue {
+  background: #0908c1;
+  color: #fff;
+}
+
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.flex-sp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home {
+  background: #fff;
+  font-family: PingFangSC-Regular;
+}
+
+.section {
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
+.title {
+  font-family: 'TencentSans-W7';
+  padding-top: 100px;
+  font-size: 28px;
+  text-align: center;
+  line-height: 36px;
+}
+
+.header {
+  padding: 36px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header .logo {
+  width: 257px;
+  height: 36px;
+}
+
+.header .logo-icon {
+  width: 50px;
+  height: 32px;
+  color: #ffffff;
+  vertical-align: text-bottom;
+}
+
+.header .logo-text {
+  font-family: 'TencentSans-W7';
+  font-size: 28px;
+  color: #ffffff;
+  line-height: 36px;
+  margin-left: 12px;
+}
+
+.header .action {
+  display: inline-block;
+  width: 86px;
+  line-height: 40px;
+  text-align: center;
+  font-family: PingFangSC-Medium;
+  font-size: 12px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.header .action-img {
+  width: 86px;
+  height: 40px;
+}
+
+.banner {
+  padding-top: 200px;
+  height: 600px;
+  background-image: url('../images/banner-bg.png');
+  background-size: cover;
+}
+
+.banner .brand {
+  font-family: 'TencentSans-W7';
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.banner .sub {
+  font-family: 'TencentSans-W3';
+  margin-top: 16px;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.banner .start-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 44px;
+  width: 190px;
+  height: 60px;
+  cursor: pointer;
+  background: #ffffff;
+  font-family: PingFangSC-Semibold;
+  font-size: 28px;
+  color: #0908c1;
+}
+
+.banner .start-btn:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.banner .start-btn:active {
+  opacity: 0.6;
+  background: #ffffff;
+}
+
+.banner .illustration {
+  position: absolute;
+  right: 0;
+  top: -39px;
+  width: 606px;
+  height: 395px;
+  background-image: url('../images/banner-illustration.png');
+  background-size: cover;
+}
+
+.features {
+  height: 1400px;
+}
+
+.features .feature {
+  display: flex;
+  align-items: center;
+  margin-top: 46px;
+}
+
+.features .feature:nth-child(odd) {
+  justify-content: flex-start;
+}
+
+.features .feature:nth-child(odd) .img {
+  margin-left: 0;
+}
+
+.features .feature:nth-child(odd) .card {
+  margin-left: 20px;
+}
+
+.features .feature:nth-child(even) {
+  justify-content: flex-end;
+}
+
+.features .feature:nth-child(even) .img {
+  margin-left: 20px;
+}
+
+.features .feature:nth-child(even) .card {
+  margin-left: 0;
+}
+
+.features .img {
+  width: 374px;
+  height: 254px;
+}
+
+.features .card {
+  background: #ffffff;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.08);
+  border-radius: 2px;
+  width: 648px;
+  height: 182px;
+  padding: 49px 96px;
+}
+
+.features .card__title {
+  font-family: PingFangSC-Medium;
+  font-size: 20px;
+  color: #333333;
+}
+
+.features .card__desc {
+  opacity: 0.6;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #000000;
+  line-height: 22px;
+  margin-top: 12px;
+}
+
+.advantages {
+  text-align: center;
+  height: 850px;
+}
+
+.advantages .block {
+  width: 322px;
+  height: 234px;
+}
+
+.advantages .block:not(:first-of-type) {
+  margin-left: 80px;
+}
+
+.advantages .block__icon {
+  width: 68px;
+  height: 68px;
+}
+
+.advantages .block__title {
+  font-family: PingFangSC-Medium;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.advantages .block__desc {
+  opacity: 0.6;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: justify;
+  line-height: 22px;
+  margin-top: 20px;
+}
+
+.customer {
+  height: 800px;
+  text-align: center;
+}
+
+.customer .carousel {
+  background: #fff;
+  height: 480px;
+  margin: 64px auto 0;
+}
+
+.customer .carousel .el-carousel__container {
+  height: 100%;
+}
+
+.customer .carousel .el-carousel__arrow {
+  height: 72px;
+  width: 72px;
+  font-size: 40px;
+  background: #e9effc;
+  color: #82a4f1;
+}
+
+.customer .carousel .el-carousel__arrow--left {
+  left: 95px;
+}
+
+.customer .carousel .el-carousel__arrow--right {
+  right: 95px;
+}
+
+.customer .carousel__content {
+  width: 552px;
+  margin: 0 auto;
+}
+
+.customer .carousel__img {
+  display: inline-block;
+  width: 76px;
+  height: 76px;
+  background-image: url('../images/qqbrowser.png');
+  background-size: cover;
+  margin-top: 80px;
+}
+
+.customer .carousel__title {
+  font-family: PingFangSC-Semibold;
+  font-size: 24px;
+  color: #333333;
+  margin-top: 20px;
+}
+
+.customer .carousel__sub {
+  font-family: PingFangSC-Medium;
+  font-size: 20px;
+  color: #333333;
+  margin-top: 42px;
+}
+
+.customer .carousel__desc {
+  opacity: 0.6;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #000000;
+  line-height: 22px;
+  margin-top: 16px;
+  text-align: left;
+}
+
+.customer .carousel__desc:not(first-child) {
+  margin-top: 12px;
+}
+
+.contact {
+  height: 580px;
+  text-align: center;
+}
+
+.contact .mail-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 362px;
+  height: 60px;
+  margin-top: 22px;
+  cursor: pointer;
+  background: #2d2cf3;
+  border-radius: 2px;
+  font-family: PingFangSC-Medium;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.contact .mail-btn:hover {
+  opacity: 0.6;
+}
+
+.contact .mail-btn:active {
+  opacity: 0.35;
+}
+
+.contact .mail-btn .icon {
+  width: 18px;
+  height: 14.1px;
+  background-image: url('data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAADYAAAAwCAYAAABaHInAAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAANqADAAQAAAABAAAAMAAAAAB8A9sEAAAC00lEQVRoBe2avU8UURTFGQKGgsIQTNAGaRQbDIWNJNBtZwH2NBgL/QPE2tZoQash2miPsbChEmNt1MaEQqMJCQYLTVDj+Dubvck4H29nd2fWN5O5yeHdefe+e895b3dngB0ZqakF0hWG4WmGK+CMritsn+G+EwTBlwBRl7h4AU5WWFCU+hEXLQl7iXM5GqmBvydhxwg5UQMxUQk/JSyMztTFH62LkLgOCbsJvsUDFb6WFmlqf9zP8Ip8qpdlxU0aZtqioj+YbIEPFRQnzq2oloRPwgS4A46B7yaO4jqREJI1QfI82AW + 2i7E5rP463FqE4xnJRBbBwfAFxOXdQffceKbEiZ7C5YdyVPEH4A/4H+ZeovDlIPnMnFpCU2YfNk2mHYsXCL+Bgzb1HPJwWua+HaUVFyYYofgGmg/+ceLMT8GboHvoGxTD/Uai/PQNfN6chJXcf7H0oRZwh7OQlrBTtFZ4juWXMKo2rOO/gvExTHVXMK04Be4CyYdDdaIfwRFmWqtOfpNEhcnccu0bsJsoZqtdml2n5zftqCPUWtVw7WJq8RzbWJeYcbzGc5Zh8BF4q8tuYdRaxYddeeIq3du61WYCv8At0HqvY/5UXADHIFuphzlpv6WwbzuSeqlnj1ZP8KswTucFccu68H6iSWnjIolH1g7BYmtAPXoywYRZg0f4ZxyCNSDdZSg/MwHVtUCqjmQFSFMBL6C6yD13ifRxM4Jjg3QPUk1VGtgK0qYEXmFczGLfNa81gCtLcyKFiZi+ti+BzI/tk2gcjq5g9wmKJG0MoRZl084V01EfFQMKKcUK1OYEX6Oc96EyQeaK9X0hh3Wn9/ed8RdMJFljsMUVqaORO3UO34iq4ITjbCqHVpzYs2JebIDzUvRk4PITaM5sdxb5UlirU9s35NNLpLGvk5sq8iKntTasm/mbEBI/5qpwzdzHvPNnIeebHBDo9mB2u7AXzaZpT+Pxl5GAAAAAElFTkSuQmCC');
+  background-size: cover;
+}
+
+.contact .tencent-logo {
+  width: 167px;
+  height: 50px;
+}
+
+.contact .tab-logo {
+  width: 204px;
+  height: 50px;
+  margin-left: 24px;
+}
+
+.contact .desc {
+  opacity: 0.8;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #ffffff;
+  margin-top: 30px;
+}
+
+.contact .doc-link {
+  vertical-align: top;
+  color: #5050ff;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>腾讯开心鼠英语ABCmouse</title>
+    <link
+      rel="shortcut icon"
+      href="//qzonestyle.gtimg.cn/touch/proj-abcmouse/html/favicon.ico?max_age=31536000"
+    />
+    <link href="./css/buy.css" rel="stylesheet" />
+    <!-- tabc ab实验sdk -->
+    <!-- 可选，实验数据上报需要依赖灯塔sdk，如果您的业务已经接入有多通道能力的灯塔sdk，可以不添加这一行 -->
+    <script src="https://beaconcdn.qq.com/sdk/3.1.42/beacon_web.min.js" charset="utf-8"></script>
+    <!-- tabc ab实验sdk -->
+    <script src="https://res.abtest.qq.com/tabc_saas/tabc_sdk.min.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      tabc.init({
+        appkey: '022033ba88269ce8aa3e22bf7e932b51',
+        // guid: "xxxxxxxx",//可选，业务方的用户id，如果不传入则使用自动生成的用户身份并存入localstorage
+        onInit: function(data) {
+          //初始化成功回调，会在加载完本地缓存策略之后回调
+        },
+        // timeout: 2000,//可选，配合onNetData使用
+        onNetData: function(data) {
+          //网络策略加载回调，拿到最新的实验策略。网络可能会有延迟或者失败，为了防止阻塞页面逻辑和显示，可以设置一个超时timeout. 超时后会立即用缓存数据回调
+        }
+      })
+    </script>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="content">
+        <img
+          src="https://qzonestyle.gtimg.cn/qzone/abcmouse/camp/group/e-commerce/img/carousel2_long_new.png"
+          alt="暂无图片"
+          class="img"
+        />
+      </div>
+      <div>
+        <div class="group-banner">
+          <div class="banner-left">
+            <div class="price">
+              <label class="price-unit">￥</label>
+              <label class="price-num">49.9</label>
+            </div>
+            <div class="sale-point">
+              <label class="group-info">
+                <span>3人拼团</span>
+              </label>
+              <label class="origin-price">单买价￥398</label>
+            </div>
+          </div>
+          <div class="limit-sale">
+            <label class="title">已有1997人拼团购买</label>
+          </div>
+        </div>
+      </div>
+      <div class="inner-purchased-list">
+        <div class="slick-slider carousel">
+          <div class="carousel-item">
+            <img class="avatar" src="//p.qpic.cn/qqconadmin/0/c3044de320194632a764303d28b87025/0" />
+            <label>林子 2分钟前购买下单成功</label>
+          </div>
+        </div>
+      </div>
+      <div class="fudao_group_buy_info" style="background-color: rgb(255, 255, 255);">
+        <p class="group-buy-title"><span>3</span>人正在拼团，可直接参团</p>
+        <div class="fixed-content">
+          <div class="left">
+            <div class="avatars">
+              <div class="avatar">
+                <div class="avatar-inner"></div>
+              </div>
+              <div class="avatar">
+                <div class="avatar-inner"></div>
+              </div>
+              <div class="avatar">
+                <div class="avatar-inner"></div>
+              </div>
+            </div>
+            <div class="info">
+              <p class="people">还差<span style="color: rgb(208, 2, 27);">1</span>人成团</p>
+              <p class="time">剩余 00:29</p>
+            </div>
+          </div>
+          <div class="__purchase_button__ right button" style="background-color: rgb(208, 2, 27);">
+            马上抢
+          </div>
+        </div>
+      </div>
+      <div class="detail-picture">
+        <img class="picture" src="//p.qpic.cn/qqconadmin/0/c7288f84ded5480b893af6241d1197a2/0" />
+        <img class="picture" src="//p.qpic.cn/qqconadmin/0/40ce71fd28eb4398b7e4237c3a585ea9/0" />
+      </div>
+      <div class="footer">
+        <input type="text" placeholder="请输入手机号" />
+        <button>提交</button>
+      </div>
+    </div>
+  </body>
+</html>

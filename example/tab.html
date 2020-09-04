@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ab实验平台</title>
+  <link rel="icon" href="https://abtest.qq.com/favicon.png" />
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css" />
+  <link href="./css/tab.css" rel="stylesheet" />
+  <!-- tabc ab实验sdk -->
+  <!-- 可选，实验数据上报需要依赖灯塔sdk，如果您的业务已经接入有多通道能力的灯塔sdk，可以不添加这一行 -->
+  <script src="https://beaconcdn.qq.com/sdk/3.1.42/beacon_web.min.js" charset="utf-8"></script>
+  <!-- tabc ab实验sdk -->
+  <script src="https://res.abtest.qq.com/tabc_saas/tabc_sdk.min.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    tabc.init({
+      appkey: '022033ba88269ce8aa3e22bf7e932b51',
+      // guid: "xxxxxxxx",//可选，业务方的用户id，如果不传入则使用自动生成的用户身份并存入localstorage
+      onInit: function (data) {
+        //初始化成功回调，会在加载完本地缓存策略之后回调
+      },
+      // timeout: 2000,//可选，配合onNetData使用
+      onNetData: function (data) {
+        //网络策略加载回调，拿到最新的实验策略。网络可能会有延迟或者失败，为了防止阻塞页面逻辑和显示，可以设置一个超时timeout. 超时后会立即用缓存数据回调
+      }
+    })
+  </script>
+</head>
+
+<body>
+  <div id="app" class="home">
+    <nav class="section header">
+      <div class="nav-inner container flex-sp">
+        <div class="logo-wrap">
+          <img src="images/svg/tab-logo-white.svg" class="logo-icon" />
+          <span class="logo-text">
+            <!-- {{ WEBSITE_NAME }} -->
+            AB实验平台
+          </span>
+        </div>
+        <div class="actions">
+          <span class="action">
+            登录/注册
+          </span>
+          <a class="action" style="margin-left: 12px" href="mailto:abt@tencent.com">
+            联系我们
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="section banner blue">
+      <div class="container">
+        <h1 class="brand">智能实验平台</h1>
+        <p class="sub">支持快速创建发布、AI控流与智能洞察的科学实验平台</p>
+        <a class="start-btn" href="#">开始使用</a>
+        <!-- <svg-icon class="start-btn" iconClass="start-to-use" /> -->
+        <div class="illustration"></div>
+      </div>
+    </div>
+    <div class="section features light">
+      <div class="container">
+        <h1 class="title">平台亮点功能</h1>
+        <div class="content">
+          <div class="feature" style="margin-top: 26px;">
+            <img class="img" src="images/feature-1.png" alt="feature" />
+            <div class="card">
+              <h4 class="card__title">可视化编辑</h4>
+              <p class="card__desc">
+                支持通过可视化界面，编辑页面元素的文字、背景图、大小、位置等，实现实验版本的快速创建。
+              </p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="card">
+              <h4 class="card__title">A/B实验</h4>
+              <p class="card__desc">
+                支持通过可视化编辑生成同一个页面的多个细微差别的实验版本并进行随机实验，以得出效果最佳的页面调整版本。
+              </p>
+            </div>
+            <img class="img" src="images/feature-2.png" alt="feature" />
+          </div>
+          <div class="feature">
+            <img class="img" src="images/feature-3.png" alt="feature" />
+            <div class="card">
+              <h4 class="card__title">多网址实验</h4>
+              <p class="card__desc">
+                支持对多个独立页面进行随机实验，以得出相对差异较大的方案中哪组效果更好。
+              </p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="card">
+              <h4 class="card__title">AI控流</h4>
+              <p class="card__desc">
+                智能分析实验结果，并基于效率优先或效果优先进行流量的自动分配，实现最高效的科学流量分配。
+              </p>
+            </div>
+            <img class="img" src="images/feature-4.png" alt="feature" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section advantages dark">
+      <div class="container">
+        <h1 class="title">产品优势</h1>
+        <div class="content">
+          <div class="flex-sp" style="margin-top: 64px;">
+            <div class="block">
+              <img src="images/svg/advantage1.svg" class="block__icon" />
+              <h4 class="block__title">支持多种实验方式</h4>
+              <p class="block__desc">
+                支持经典AB实验、多网址实验、参数实验等实验模型，满足市场、运营和产品的不同角色在落地页优化、运营方案优选、产品路径优化过程中的快速实验需求。
+              </p>
+            </div>
+            <div class="block">
+              <img src="images/svg/advantage2.svg" class="block__icon" />
+              <h4 class="block__title">可视化编辑实验页面</h4>
+              <p class="block__desc">
+                支持非技术人员直接在可视化界面完成页面元素的文案修改、图片替换，元素大小、颜色、位置的调整等，低成本快速创建实验版本。
+              </p>
+            </div>
+            <div class="block">
+              <img src="images/svg/advantage3.svg" class="block__icon" />
+              <h4 class="block__title">科学实验方法赋能</h4>
+              <p class="block__desc">
+                基于科学的AB实验方法，支持互斥实验，正交实验管理，实现更科学的流量分配，提升流量利用率。
+              </p>
+            </div>
+          </div>
+          <div class="flex-c" style="margin-top: 64px;">
+            <div class="block">
+              <img src="images/svg/advantage4.svg" class="block__icon" />
+              <h4 class="block__title">快速实验，敏捷迭代</h4>
+              <p class="block__desc">
+                仅需几分钟即可完成多个实验版本的配置到上线全流程，支持实时查看实验数据，快速决策实验效果，敏捷迭代。
+              </p>
+            </div>
+            <div class="block">
+              <img src="images/svg/advantage5.svg" class="block__icon" />
+              <h4 class="block__title">多维数据分析，智能洞察</h4>
+              <p class="block__desc">
+                基于标准的假设检验方法智能判断实验优胜组，帮助业务快速决策；同时支持多维度过滤对比实验分析结果。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section customer blue">
+      <div class="container">
+        <h1 class="title">客户的声音</h1>
+        <div class="content">
+          <el-carousel class="carousel" :interval="5000" arrow="always">
+            <el-carousel-item v-for="item in 4" :key="item">
+              <div class="carousel__content">
+                <div class="carousel__img"></div>
+                <h4 class="carousel__title">QQ浏览器</h4>
+                <p class="carousel__sub">推行规模化实验，实现零成本double 渠道新增</p>
+                <p class="carousel__desc">
+                  在我们广告渠道的获客新增遇到瓶颈时，我们引入了AB实验系统，让渠道投放人员以极低成本尝试了包括：按钮颜色、1-2个字差别的标题，按钮的位置等各种优化方案。
+                </p>
+                <p class="carousel__desc">
+                  虽然每个小优化可能只有零点几个百分点的提升，但当我们将实验频率提升到每周并行跑十几个实验时，累计上百组的实验优化后，效果超出我们的预期，仅借助实验平台就实现了渠道拉新效果翻倍。
+                </p>
+              </div>
+            </el-carousel-item>
+          </el-carousel>
+        </div>
+      </div>
+    </div>
+    <div class="section contact dark">
+      <div class="container">
+        <h1 class="title">联系我们</h1>
+        <div class="content">
+          <!-- <svg-icon class="mail-logo" iconClass="button-e-mail" /> -->
+          <a class="mail-btn" href="mailto:abt@tencent.com">
+            <i class="icon"></i>
+            <span style="margin-left: 11px">abt@tencent.com</span>
+          </a>
+          <div style="margin-top: 60px;">
+            <img src="images/svg/tencent-logo.svg" class="tencent-logo" />
+            <img class="tab-logo" src="images/tab-logo2.png" alt="tab-logo" />
+          </div>
+          <p class="desc">Copyright © 2020 Tencent. All Rights Reserved. 腾讯公司 版权所有</p>
+          <p class="desc">粤B2-20090059-5</p>
+          <p class="desc">
+            <span>
+              腾讯AB实验平台
+              <a type="primary" class="doc-link" href="#">
+                服务协议
+              </a>
+            </span>
+            <span style="margin-left: 20px">
+              腾讯AB实验平台
+              <a type="primary" class="doc-link" href="#">
+                隐私声明
+              </a>
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  <script>
+    new Vue({
+      el: '#app'
+    })
+  </script>
+</body>
+
+</html>
